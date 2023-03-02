@@ -1,78 +1,65 @@
-# Anna’s Archive
+# 安娜的档案
 
-This is the code hosts annas-archive.org, the search engine for books, papers, comics, magazines, and more.
+这是主持annas-archive.org的代码，是书籍、论文、漫画、杂志等的搜索引擎。
 
-## Running locally
+## 本地运行
 
-In one terminal window, run:
+在一个终端窗口中，运行。
 
-```bash
+``bash
 cp .env.dev .env
 docker-compose up --build
 ```
 
-Now open http://localhost:8000. It should give you an error, since MySQL is not yet initialized. In another terminal window, run:
+现在打开http://localhost:8000。它应该给你一个错误，因为MySQL还没有被初始化。在另一个终端窗口，运行。
 
-```bash
+``bash
 ./run flask cli dbreset
 ```
 
-Now restart the `docker-compose up` from above, and things should work.
+现在重新启动上面的 "docker-compose up"，事情应该就可以了。
 
-Common issues:
-* Funky permissions on ElasticSearch data: `sudo chmod 0777 -R ../allthethings-elastic-data/`
-* MariaDB wants too much RAM: comment out `key_buffer_size` in `mariadb-conf/my.cnf`
-* Note that the example data is pretty funky / weird because of some joined tables not lining up nicely when only exporting a small number of records.
-* You might need to adjust the size of ElasticSearch's heap size, by changing `ES_JAVA_OPTS` in `docker-compose.yml`.
+常见的问题。
+* ElasticSearch数据的古怪权限。`sudo chmod 0777 -R .../allthethings-elastic-data/`。
+* MariaDB想要太多的内存：在`mariadb-conf/my.cnf`中注释掉`key_buffer_size`。
+* 请注意，这个例子的数据非常古怪，因为当只输出少量的记录时，一些连接的表没有很好地排成一列。
+* 你可能需要调整ElasticSearch的堆大小，通过改变`docker-compose.yml`中的`ES_JAVA_OPTS`。
 
 TODO:
-* [Importing actual data](https://annas-software.org/AnnaArchivist/annas-archive/-/issues/4)
+* [导入实际数据](https://annas-software.org/AnnaArchivist/annas-archive/-/issues/4)
 
-Notes:
-* This repo is based on [docker-flask-example](https://github.com/nickjj/docker-flask-example).
+注意事项。
+* 这个 repo 是基于 [docker-flask-example](https://github.com/nickjj/docker-flask-example)。
 
-## Architecture
+## 架构
 
-This is roughly the structure:
-* 1+ web servers
-* Heavy caching in front of web servers (e.g. Cloudflare)
-* 1+ read-only MariaDB db with MyISAM tables of data ("mariadb")
-* 1 read/write MariaDB db for persistent data ("mariapersist")
+大致上是这样的结构。
+* 1个以上的网络服务器
+* 在网络服务器前有大量的缓存（如Cloudflare）。
+* 1个以上只读的MariaDB数据库，有MyISAM数据表（"mariadb"）。
+* 1个读/写的MariaDB db，用于持久性数据（"mariapersist"）。
 
-Practically, you also want proxy servers in front of the web servers, so you can control who gets DMCA notices.
+实际上，你也希望在网络服务器前面有代理服务器，这样你就可以控制谁收到DMCA通知。
 
-## Importing all data
+##导入所有数据
 
-See [data-imports/README.md](data-imports/README.md).
+参见 [data-imports/README.md](数据-imports/README.md)。
 
-## Translations
+## 翻译
 
-These are a work in progress. For now, we check in .po _and_ .mo files. The process is as follows:
-```sh
-# After updating any `gettext` calls:
+这些是正在进行的工作。目前，我们在.po _和.mo文件中检查。这个过程如下。
+``sh
+# 在更新了任何 "gettext "调用之后。
 pybabel extract --omit-header -F babel.cfg -o messages.pot .
 pybabel update --omit-header -i messages.pot -d allthethings/translations --no-fuzzy-matching
 
-# After changing any translations:
+# 在改变任何翻译之后。
 pybabel compile -f -d allthethings/translations
 
-# All of the above:
+# 以上全部内容。
 ./update-translations.sh
 
-# To add a new translation file:
+# 要添加一个新的翻译文件。
 pybabel init -i messages.pot -d allthethings/translations -l es
 ```
 
-Try it out by going to `http://es.localhost` (on some systems you might have to add this to your `/etc/hosts` file).
-
-## Contribute
-
-To report bugs or suggest new ideas, please file an ["issue"](https://annas-software.org/AnnaArchivist/annas-archive/-/issues).
-
-To contribute code, also file an [issue](https://annas-software.org/AnnaArchivist/annas-archive/-/issues), and include your `git diff` inline (you can use \`\`\`diff to get some syntax highlighting on the diff). Merge requests are currently disabled for security purposes — if you make consistently useful contributions you might get access.
-
-For larger projects, please contact Anna first on [Twitter](https://twitter.com/AnnaArchivist) or [Reddit](https://www.reddit.com/user/AnnaArchivist).
-
-## License
-
-Released in the public domain under the terms of [CC0](./LICENSE). By contributing you agree to license your code under the same license.
