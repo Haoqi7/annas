@@ -43,7 +43,7 @@ TODO:
 
 ## 导入所有数据
 
-参见 [data-imports/README.md](数据-imports/README.md)。
+参见 [data-imports/README.md](data-imports/README.md)。
 
 ## 翻译
 
