@@ -6,14 +6,14 @@
 
 在一个终端窗口中，运行。
 
-``bash
+```bash
 cp .env.dev .env
 docker-compose up --build
 ```
 
 现在打开http://localhost:8000。它应该给你一个错误，因为MySQL还没有被初始化。在另一个终端窗口，运行。
 
-``bash
+```bash
 ./run flask cli dbreset
 ```
 
@@ -41,14 +41,14 @@ TODO:
 
 实际上，你也希望在网络服务器前面有代理服务器，这样你就可以控制谁收到DMCA通知。
 
-##导入所有数据
+## 导入所有数据
 
 参见 [data-imports/README.md](数据-imports/README.md)。
 
 ## 翻译
 
 这些是正在进行的工作。目前，我们在.po _和.mo文件中检查。这个过程如下。
-``sh
+```sh
 # 在更新了任何 "gettext "调用之后。
 pybabel extract --omit-header -F babel.cfg -o messages.pot .
 pybabel update --omit-header -i messages.pot -d allthethings/translations --no-fuzzy-matching
