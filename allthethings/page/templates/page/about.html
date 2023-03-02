@@ -1,0 +1,103 @@
+{% extends "layouts/index.html" %}
+
+{% block title %}{{ gettext('page.about.title') }}{% endblock %}
+
+{% block body %}
+  <h2 class="mt-4 mb-1 text-3xl font-bold">{{ gettext('page.about.header') }}</h2>
+
+  <p class="mb-4">
+    {{ gettext('page.about.text1') }}
+  </p>
+
+  <p class="mb-4">
+    {{ gettext('page.about.text2') }}
+  </p>
+
+  <p class="mb-4">
+    {{ gettext('page.about.text3', email=('<a href="mailto:AnnaArchivist@proton.me">AnnaArchivist@&#8203;proton.&#8203;me</a>' | safe)) }}
+  </p>
+
+  <p class="mb-4">
+    {{ gettext('page.about.text4', email=('<a href="mailto:AnnaDMCA@proton.me">AnnaDMCA@&#8203;proton.&#8203;me</a>' | safe)) }}
+  </p>
+  
+  <p><strong>{{ gettext('page.about.help.header') }}</strong></p>
+
+  <ol class="list-inside mb-4">
+    {{ gettext('page.about.help.text') }}
+  </ol>
+
+  {% if gettext('common.english_only') | trim %}
+    <p class="mb-4 font-bold">{{ gettext('common.english_only') }}</p>
+  {% endif %}
+
+  <div lang="en">
+    <p><strong>Requesting books</strong></p>
+
+    <p class="">
+      For now, can you please requests eBooks on the <a href="https://forum.mhut.org">Libgen.rs forum</a>? You can create an account there and post in one of these threads:
+    </p>
+
+    <ul class="list-inside">
+      <li class="list-disc">For eBooks, use <a href="https://forum.mhut.org/viewtopic.php?f=17&t=6399">this thread</a>.</li>
+      <li class="list-disc">For books that are not available as eBooks, use <a href="https://forum.mhut.org/viewtopic.php?f=10&t=7588">this thread</a>.</li>
+    </ul>
+
+    <p class="mb-4">
+      In both cases, be sure to follow the rules mentioned in the threads.
+    </p>
+
+    <p><strong>Uploading books</strong></p>
+
+    <p class="mb-4">
+      We suggest uploading new books to the Library Genesis forks. Here is a <a href="https://wiki.mhut.org/content:how_to_upload">handy guide</a>. Note that both forks that we index on this website pull from this same upload system.
+    </p>
+
+    <p><strong>Corrections</strong></p>
+
+    <p class="mb-4">
+      Please post any metadata corrections on the <a href="https://forum.mhut.org">Libgen.rs forum</a>. We recommend posting in <a href="https://forum.mhut.org/viewtopic.php?f=17&t=6423">this topic</a>. Thanks for your thoroughness!
+    </p>
+
+    <p><strong>Progress bar</strong></p>
+
+    <p class="mb-4">
+      The progress bar on the home page is currently not meaningful.
+      We don't know how many unique editions we actually have in shadow libraries (vs how many duplicates), nor do we know <a href="http://annas-blog.org/blog-isbndb-dump-how-many-books-are-preserved-forever.html">how many books</a> there are in the world.
+      And humanity’s written heritage extends beyond just books — especially nowadays.
+      But we aspire to figure out those numbers, as well as expand beyond books.
+      Hopefully we can fill in this progress bar with real data in the future.
+    </p>
+
+    <p class="mb-4">
+      For now, the progress bar highlights our ambition and philosophy. We hope to inspire you to join us on this mission.
+    </p>
+
+    <p><strong>Resources</strong></p>
+
+    <ul class="list-inside mb-4">
+      <li class="list-disc"><a href="https://annas-blog.org">Anna’s Blog</a>, <a href="https://twitter.com/AnnaArchivist">Twitter</a>, <a href="https://www.reddit.com/user/AnnaArchivist">Reddit</a>, <a href="https://www.reddit.com/r/Annas_Archive">Subreddit</a> — regular updates</li>
+      <li class="list-disc"><a href="https://annas-software.org">Anna’s Software</a> — our open source code</li>
+      <li class="list-disc"><a href="https://translate.annas-software.org">Translate on Anna’s Software</a> — our translation system</li>
+      <li class="list-disc"><a href="/datasets">Datasets</a> & <a href="/torrents">Torrents</a> — about the data</li>
+      <li class="list-disc"><a href="https://annas-archive.org">annas-archive.org</a> & <a href="https://annas-archive.gs">annas-archive.gs</a> — alternative domains</li>
+      <li class="list-disc"><a href="https://en.wikipedia.org/wiki/Anna%27s_Archive">Wikipedia</a> — more about us (please help keep this page updated, or create one for your own language!)</li>
+    </ul>
+
+    <p><strong>Content complaints</strong></p>
+
+    <p class="mb-4">
+      We do not host any copyrighted materials here. We are a search engine, and as such only index metadata that is already publicly available.
+      Books, papers, and so on can only be downloaded either through the original websites, through IPFS proxies (like <a href="https://ipfs.io">IPFS.io</a>), or directly from other people through torrents — we do not host such content on here ourselves.
+      When downloading from these sources, we would suggest to check the laws in your jurisdiction with respect to what is allowed.
+      We are not responsible for content hosted by others.
+    </p>
+
+    <p class="mb-4">
+      If you have complaints about what you see on here, your best bet is to contact the original website.
+      We regularly pull their changes into our database.
+      If you really do think you have a valid DMCA complaint we should respond to, you can reach us at <a href="mailto:AnnaDMCA@proton.me">AnnaDMCA@&#8203;proton.&#8203;me</a>.
+      We take your complaints seriously, and will get back to you as soon as possible.
+    </p>
+  </div>
+{% endblock %}

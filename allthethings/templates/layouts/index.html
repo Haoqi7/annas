@@ -1,0 +1,339 @@
+<html lang="{{ g.current_lang_code }}">
+  <head>
+    <meta charset="utf-8">
+    <title>{% if self.title() %}{% block title %}{% endblock %} - {% endif %}{{ gettext('layout.index.title') }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
+    {% if self.meta_tags() %}
+      {% block meta_tags %}{% endblock %}
+    {% else %}
+      <meta name="description" content="Search engine of shadow libraries: books, papers, comics, magazines." />
+    {% endif %}
+    <meta name="twitter:card" value="summary">
+    <meta name="twitter:creator" content="@AnnaArchivist"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+  </head>
+  <body>
+    <div class="header" role="navigation">
+      <div class="bg-[#0195ff] hidden js-top-banner">
+        <div class="max-w-[850px] mx-auto px-4 py-2 text-[#fff] flex">
+          <div>
+            {{ gettext('layout.index.header.banner.new_donation_method', method_name=('<strong>Paypal</strong>' | safe), donate_link_open_tag=('<a href="/donate" class="custom-a text-[#fff] hover:text-[#ddd] underline">' | safe)) }}
+          </div>
+          <div>
+            <a href="#" class="custom-a text-[#fff] hover:text-[#ddd] js-top-banner-close">✕</a>
+          </div>
+        </div>
+      </div>
+      <script>
+        (function() {
+          /*
+          var latestTopBannerType = '1';
+          var topBannerMatch = document.cookie.match(/top_banner_hidden=([^$ ;}]+)/);
+          var topBannerType = '';
+          if (topBannerMatch) {
+            topBannerType = topBannerMatch[1];
+            // Refresh cookie.
+            document.cookie = 'top_banner_hidden=' + topBannerType + ';path=/;expires=Fri, 31 Dec 9999 23:59:59 GMT';
+          }
+          if (topBannerType !== latestTopBannerType) {
+            document.querySelector('.js-top-banner').style.display = 'block';
+            document.querySelector('.js-top-banner-close').addEventListener('click', function(event) {
+              document.querySelector('.js-top-banner').style.display = 'none';
+              document.cookie = 'top_banner_hidden=' + latestTopBannerType + ';path=/;expires=Fri, 31 Dec 9999 23:59:59 GMT';
+              event.preventDefault();
+              return false;
+            });
+          }
+          */
+        })();
+      </script>
+      <div class="header-inner">
+        <div class="header-inner-top">
+          <a href="/" class="custom-a text-[#000] hover:text-[#444]"><h1>{{ gettext('layout.index.header.title') }}</h1></a>
+
+          <script>
+            (function() {
+              if (location.hostname.includes('localhost')) {
+                location.hostname = location.hostname.replace('localhost', 'localtest.me');
+                return;
+              }
+
+              var langCodes = [{% for lang_code, _lang_name in g.languages %}{{ lang_code | tojson }}, {% endfor %}];
+
+              var domainPosition = 0;
+              var potentialSubDomainLangCode = location.hostname.split(".")[0];
+              var subDomainLangCode = 'en';
+              if (langCodes.includes(potentialSubDomainLangCode) || potentialSubDomainLangCode === 'www') {
+                domainPosition = potentialSubDomainLangCode.length + 1;
+                if (potentialSubDomainLangCode !== 'www') {
+                  subDomainLangCode = potentialSubDomainLangCode;
+                }
+              }
+
+              baseDomain = location.hostname.substring(domainPosition);
+
+              function setLangCookie(langCode) {
+                if (!langCodes.includes(langCode)) {
+                  return;
+                }
+                document.cookie = 'selected_lang=' + langCode + ';path=/;expires=Fri, 31 Dec 9999 23:59:59 GMT;domain=' + baseDomain;
+              }
+
+              function redirectLang(langCode) {
+                if (!langCodes.includes(langCode)) {
+                  return;
+                }
+                var prefix = '';
+                if (langCode != 'en') {
+                  prefix = langCode + '.';
+                }
+                location.hostname = prefix + baseDomain;
+              }
+
+              window.handleChangeLang = function(event) {
+                const langCode = event.target.value;
+                setLangCookie(langCode);
+                redirectLang(langCode);
+              };
+
+              {
+                // If our referrer was (likely) a different domain of our website (with the same lang code),
+                // then behave as if that lang code was set as a cookie all along.
+                if (document.referrer.includes("://" + subDomainLangCode + ".")) {
+                  setLangCookie(subDomainLangCode);
+                }
+              }
+
+              {
+                const cookieLangMatch = document.cookie.match(/selected_lang=([^$ ;}]+)/);
+                // If there's no cookie yet, let's try to set one.
+                if (!cookieLangMatch) {
+                  // See if the user's browser language is one that we support directly.
+                  for (const langCode of navigator.languages) {
+                    // Take the first language that we support.
+                    if (langCodes.includes(langCode)) {
+                      setLangCookie(langCode);
+                      // Bail out so we don't redirect to a suboptimal language.
+                      break;
+                    }
+                  }
+                }
+              }
+
+              {
+                const cookieLangMatch = document.cookie.match(/selected_lang=([^$ ;}]+)/);
+                if (cookieLangMatch) {
+                  // Refresh cookie with a new expiry, in case the browser has
+                  // restricted it.
+                  var explicitlyRequestedLangCode = cookieLangMatch[1];
+                  setLangCookie(explicitlyRequestedLangCode);
+
+                  // If a cookie is set, that we want to go to the language, so let's redirect.
+                  if (explicitlyRequestedLangCode != subDomainLangCode) {
+                    redirectLang(explicitlyRequestedLangCode);
+                  }
+                }
+              }
+            })();
+          </script>
+          <div class="absolute invisible pointer-events-none js-globe-size" aria-hidden="true">🌐</div>
+          <select class="py-1 rounded text-gray-500 max-w-[50px] mt-1 ml-2 appearance-none text-center js-header-language-select" onchange="handleChangeLang(event)">
+            <option>🌐</option>
+            {% for lang_code, lang_name in g.languages %}
+              <option value="{{ lang_code }}">{{ lang_name }} [{{ lang_code }}]{% if lang_code == g.current_lang_code %} ☑️{% endif %}</option>
+            {% endfor %}
+          </select>
+          <script>
+            (function() {
+              var width = 16 + document.querySelector('.js-globe-size').offsetWidth;
+              document.querySelector('.js-header-language-select').style.maxWidth = width + 'px';
+            })();
+          </script>
+        </div>
+
+        <div class="mb-[10px]">{{ gettext('layout.index.header.tagline') }}</div>
+
+        <div class="header-bar">
+          <div class="header-links relative z-10">
+            <script>
+              function topMenuToggle(event, className) {
+                const el = document.querySelector("." + className);
+                if (el.style.display === "block") {
+                  el.style.display = "none";
+                  el.setAttribute('aria-expanded', "false");
+                } else {
+                  el.style.display = "block";
+                  el.setAttribute('aria-expanded', "true");
+                  function clickOutside(innerEvent) {
+                    if (!el.contains(innerEvent.target)) {
+                      el.style.display = "none";
+                      el.setAttribute('aria-expanded', "false")
+                      document.removeEventListener('click', clickOutside);
+                      innerEvent.preventDefault();
+                      return false;
+                    }
+                  }
+                  setTimeout(function() {
+                    document.addEventListener('click', clickOutside);
+                  }, 0);
+                }
+                event.preventDefault();
+                return false;
+              }
+            </script>
+            <a href="#" aria-expanded="false" onclick="topMenuToggle(event, 'js-top-menu-home')" class="{{ 'header-link-active' if header_active in ['home', 'about', 'datasets'] }}">
+              <span class="header-link-normal">
+                {% if header_active == 'about' %}{{ gettext('layout.index.header.nav.about') }}
+                {% elif header_active == 'datasets' %}{{ gettext('layout.index.header.nav.datasets') }}
+                {% else %}{{ gettext('layout.index.header.nav.home') }}{% endif %}
+                ▾
+              </span>
+              <span class="header-link-bold">
+                {% if header_active == 'about' %}{{ gettext('layout.index.header.nav.about') }}
+                {% elif header_active == 'datasets' %}{{ gettext('layout.index.header.nav.datasets') }}
+                {% else %}{{ gettext('layout.index.header.nav.home') }}{% endif %}
+                ▾
+              </span>
+            </a>
+            <div class="absolute left-0 top-[100%] bg-[#f2f2f2] px-4 shadow js-top-menu-home hidden">
+              <a class="custom-a block py-1 {% if header_active == 'home'     %}font-bold text-black{% else %}text-[#000000a3]{% endif %} hover:text-black" href="/">{{ gettext('layout.index.header.nav.home') }}</a>
+              <a class="custom-a block py-1 {% if header_active == 'about'    %}font-bold text-black{% else %}text-[#000000a3]{% endif %} hover:text-black" href="/about">{{ gettext('layout.index.header.nav.about') }}</a>
+              <a class="custom-a block py-1 {% if header_active == 'datasets' %}font-bold text-black{% else %}text-[#000000a3]{% endif %} hover:text-black" href="/datasets">{{ gettext('layout.index.header.nav.datasets') }}</a>
+              <a class="custom-a block py-1 text-[#000000a3] hover:text-black" href="https://annas-blog.org" target="_blank">{{ gettext('layout.index.header.nav.annasblog') }}</a>
+              <a class="custom-a block py-1 text-[#000000a3] hover:text-black" href="https://annas-software.org" target="_blank">{{ gettext('layout.index.header.nav.annassoftware') }}</a>
+              <a class="custom-a block py-1 text-[#000000a3] hover:text-black" href="https://translate.annas-software.org" target="_blank">{{ gettext('layout.index.header.nav.translate') }}</a>
+            </div>
+            <a href="/donate" class="{{ 'header-link-active' if header_active == 'donate' }}"><span class="header-link-normal">{{ gettext('layout.index.header.nav.donate') }}</span><span class="header-link-bold">{{ gettext('layout.index.header.nav.donate') }}</span></a>
+            <a href="/search" class="{{ 'header-link-active' if header_active == 'search' }}"><span class="header-link-normal">{{ gettext('layout.index.header.nav.search') }}</span><span class="header-link-bold">{{ gettext('layout.index.header.nav.search') }}</span></a>
+          </div>
+          <form class="header-search" action="/search" method="get" role="search">
+            <input name="q" type="text" placeholder="{{ gettext('common.search.placeholder') }}" value="{{search_input}}">
+          </form>
+        </div>
+      </div>
+    </div>
+    <main class="main">{% block body %}{% endblock %}</main>
+    <footer class="bg-[#0000000d]" style="box-shadow: 0px 0px 7px rgb(0 0 0 / 30%)">
+      <div class="max-w-[850px] mx-auto p-[12px] leading-relaxed flex flex-wrap">
+        <p class="mr-4 mb-4" style="flex-grow: 1">
+          <strong class="font-bold">{{ gettext('layout.index.footer.list1.header') }}</strong><br>
+          <a class="custom-a text-[#777] hover:text-[#333]" href="/">{{ gettext('layout.index.footer.list1.home') }}</a><br>
+          <a class="custom-a text-[#777] hover:text-[#333]" href="/about">{{ gettext('layout.index.footer.list1.about') }}</a><br>
+          <a class="custom-a text-[#777] hover:text-[#333]" href="/donate">{{ gettext('layout.index.footer.list1.donate') }}</a><br>
+          <a class="custom-a text-[#777] hover:text-[#333]" href="/datasets">{{ gettext('layout.index.footer.list1.datasets') }}</a><br>
+          <select class="p-1 rounded text-gray-500 mt-1" onchange="handleChangeLang(event)">
+            {% for lang_code, lang_name in g.languages %}
+              {% if g.current_lang_code == lang_code %}
+                <option value="{{ lang_code }}">🌐 {{ lang_name }} [{{ lang_code }}]</option>
+              {% endif %}
+            {% endfor %}
+            {% for lang_code, lang_name in g.languages %}
+              <option value="{{ lang_code }}">{{ lang_name }} [{{ lang_code }}]{% if lang_code == g.current_lang_code %} ☑️{% endif %}</option>
+            {% endfor %}
+          </select>
+        </p>
+        <p class="mr-4 mb-4" style="flex-grow: 1">
+          <strong class="font-bold">{{ gettext('layout.index.footer.list2.header') }}</strong><br>
+          <a class="custom-a text-[#777] hover:text-[#333]" href="https://twitter.com/AnnaArchivist">{{ gettext('layout.index.footer.list2.twitter') }}</a> / <a class="custom-a text-[#777] hover:text-[#333]" href="https://www.reddit.com/user/AnnaArchivist">{{ gettext('layout.index.footer.list2.reddit') }}</a> / <a class="custom-a text-[#777] hover:text-[#333]" href="https://www.reddit.com/r/Annas_Archive">{{ gettext('layout.index.footer.list2.subreddit') }}</a><br>
+          <a class="custom-a text-[#777] hover:text-[#333]" href="https://annas-blog.org">{{ gettext('layout.index.footer.list2.blog') }}</a><br>
+          <a class="custom-a text-[#777] hover:text-[#333]" href="https://annas-software.org">{{ gettext('layout.index.footer.list2.software') }}</a><br>
+          <a class="custom-a text-[#777] hover:text-[#333]" href="https://translate.annas-software.org">{{ gettext('layout.index.footer.list2.translate') }}</a><br>
+          <a class="custom-a text-[#777] hover:text-[#333]" href="mailto:AnnaArchivist@proton.me">AnnaArchivist@&#8203;proton.&#8203;me</a><br>
+          DMCA: <a class="custom-a text-[#777] hover:text-[#333]" href="mailto:AnnaDMCA@proton.me">AnnaDMCA@&#8203;proton.&#8203;me</a><br>
+        </p>
+
+        <p style="flex-grow: 2">
+          <strong class="font-bold">{{ gettext('layout.index.footer.list3.header') }}</strong><br>
+          <a class="custom-a text-[#777] hover:text-[#333] js-annas-archive-org" href="https://annas-archive.org">annas-archive.org</a></a><br>
+          <a class="custom-a text-[#777] hover:text-[#333] js-annas-archive-gs" href="https://annas-archive.gs">annas-archive.gs</a><br>
+          <script>
+            (function() {
+              // Possible domains we can encounter:
+              const domainsToReplace = ["annas-archive.org", "annas-archive.gs", "localtest.me:8000", "localtest.me"];
+              // For checking and redirecting if our current host is down (but if Cloudflare still responds).
+              const initialCheckMs = 500;
+              const intervalCheckOtherDomains = 10000;
+              const domainsToNavigateTo = ["annas-archive.org", "annas-archive.gs"];
+              // For testing:
+              // const domainsToNavigateTo = ["localtest.me:8000", "testing_redirects.localtest.me:8000"];
+
+              // First, set the mirror links at the bottom of the page.
+              const loc = "" + window.location;
+              let currentDomainToReplace = "localtest.me";
+              for (const domain of domainsToReplace) {
+                if (loc.includes(domain)) {
+                  currentDomainToReplace = domain;
+                  break;
+                }
+              }
+              document.querySelector(".js-annas-archive-org").href = loc.replace(currentDomainToReplace, "annas-archive.org");
+              document.querySelector(".js-annas-archive-gs").href = loc.replace(currentDomainToReplace, "annas-archive.gs");
+
+              // Use the new domain in all links and forms.
+              let areUsingOtherDomain = false;
+              function useOtherDomain(domain) {
+                if (areUsingOtherDomain) {
+                  return;
+                }
+                areUsingOtherDomain = true;
+                const newOrigin = window.location.origin.replace(currentDomainToReplace, domain);
+                for (const el of document.querySelectorAll("a")) {
+                  el.href = el.href.replace(currentDomainToReplace, domain);
+                }
+                for (const el of document.querySelectorAll("form")) {
+                  el.action = el.action.replace(currentDomainToReplace, domain);
+                }
+              }
+
+              function getRandomString() {
+                return Math.random() + "." + Math.random() + "." + Math.random();
+              }
+
+              // Check if there are other domains that are still up. Use the first one that responds.
+              let foundOtherDomain = false;
+              function checkOtherDomains() {
+                if (foundOtherDomain) {
+                  return;
+                }
+                const fetchOptions = { mode: "cors", method: "GET", credentials: "omit", cache: "no-cache", redirect: "error" };
+                for (const domain of domainsToNavigateTo) {
+                  if (currentDomainToReplace !== domain) {
+                    fetch('//' + domain + '/dyn/up/?' + getRandomString(), fetchOptions).then(function(response) {
+                      if (foundOtherDomain) {
+                        return;
+                      }
+                      if (!(response.status >= 500 && response.status <= 599)) {
+                        foundOtherDomain = true;
+                        useOtherDomain(domain);
+                      }
+                    }).catch(function() {
+                      // Ignore.
+                    });
+                  }
+                }
+              }
+
+              // Keep checking the current domain once, to see if it's still up.
+              function checkCurrentDomain() {
+                const fetchOptions = { method: "GET", credentials: "omit", cache: "no-cache", redirect: "error" };
+                fetch('/dyn/up/?' + getRandomString(), fetchOptions).then(function(response) {
+                  // Only do something in the case of an actual error code from Cloudflare, not if the users network is bad.
+                  if (response.status >= 500 && response.status <= 599) {
+                    // Keep checking in case one comes online.
+                    setInterval(checkOtherDomains, intervalCheckOtherDomains);
+                  }
+                }).catch(function() {
+                  // Ignore; see above.
+                });
+              }
+              setTimeout(checkCurrentDomain, initialCheckMs);
+            })();
+          </script>
+        </p>
+      </div>
+    </footer>
+  </body>

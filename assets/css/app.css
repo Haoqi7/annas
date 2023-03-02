@@ -1,0 +1,134 @@
+/*
+ * Your custom CSS goes here but before adding a lot of CSS check this out:
+ *   https://tailwindcss.com/docs/extracting-components
+*/
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+select, input, a, button {
+outline-color: #00000055;
+}
+html, body {
+height: 100%;
+display: flex;
+flex-direction: column;
+}
+.main {
+max-width: 850px;
+margin: 0 auto;
+padding: 20px 10px;
+width: 100%;
+flex-grow: 1;
+}
+.header {
+background: #f2f2f2;
+box-shadow: 0px 0px 7px rgb(0 0 0 / 30%);
+}
+.header-inner {
+max-width: 850px;
+margin: 0 auto;
+padding: 12px;
+}
+.header-inner-top {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.header-inner a:not(.custom-a), .header-inner a:not(.custom-a):visited {
+text-decoration: none;
+color: #000000a3;
+}
+.header-inner a:not(.custom-a):hover, .header-inner a:not(.custom-a):focus {
+color: black;
+}
+.header-inner h1 {
+font-size: 2.5em;
+line-height: 1;
+margin: 10px 0;
+font-weight: 900;
+}
+.header-bar {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.header-links {
+flex-shrink: 0;
+white-space: nowrap;
+display: flex;
+flex-wrap: wrap;
+max-width: 100%;
+margin-bottom: -12px;
+}
+.header-links > a {
+margin-right: 1em;
+padding-bottom: 3px;
+margin-bottom: 8px;
+position: relative;
+}
+.header-link-normal {
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+}
+.header-link-bold {
+font-weight: bold;
+visibility: hidden;
+}
+.header-links > a.header-link-active {
+color: black;
+border-bottom: 3px solid #0095ff;
+}
+.header-links > a.header-link-active > .header-link-normal {
+visibility: hidden;
+}
+.header-links > a.header-link-active > .header-link-bold {
+visibility: visible;
+}
+.header-search {
+display: flex;
+overflow: hidden;
+flex-grow: 1;
+max-width: 400px;
+}
+.header-search > select {
+border: none;
+padding: 5px;
+outline-offset: -1px;
+max-width: 125px;
+font-size: 0.9em;
+}
+.header-search > input {
+flex-grow: 1;
+border: none;
+outline-offset: -1px;
+padding: 0 0.5em;
+font-size: 0.9em;
+height: 2em;
+background: white;
+outline-color: white;
+}
+a:not(.custom-a), a:not(.custom-a):visited {
+color: #777;
+text-decoration: underline;
+}
+a:not(.custom-a):hover, a:not(.custom-a):focus {
+color: #333;
+}
+a.anna, a.anna:visited {
+color: #008df0;
+text-decoration: underline;
+}
+a.anna:hover, a.anna:focus {
+color: #0070c0;
+}
+form {
+margin-block-end: 0;
+}
+@keyframes header-ping {
+75%, 100% {
+transform: scale(2);
+opacity: 0;
+}
+}

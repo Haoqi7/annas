@@ -1,0 +1,657 @@
+#: allthethings/page/views.py:1661
+msgid "common.md5_problem_type_mapping.lgrsnf_visible"
+msgstr "Libgen.rs নন-ফিকশনে দৃশ্যমান নয়"
+
+#: allthethings/page/views.py:1662
+msgid "common.md5_problem_type_mapping.lgrsfic_visible"
+msgstr "Libgen.rs ফিকশনে দৃশ্যমান নয়"
+
+#: allthethings/page/views.py:1663
+msgid "common.md5_problem_type_mapping.lgli_visible"
+msgstr "Libgen.li এ দৃশ্যমান নয়"
+
+#: allthethings/page/views.py:1664
+msgid "common.md5_problem_type_mapping.lgli_broken"
+msgstr ""
+
+#: allthethings/page/views.py:1665
+msgid "common.md5_problem_type_mapping.zlib_missing"
+msgstr "জেড-লাইব্রেরীতে নেই"
+
+#: allthethings/page/views.py:1671
+msgid "common.md5_content_type_mapping.book_unknown"
+msgstr "বই (অপরিচিত)"
+
+#: allthethings/page/views.py:1672
+msgid "common.md5_content_type_mapping.book_nonfiction"
+msgstr "বই (নন-ফিকশন)"
+
+#: allthethings/page/views.py:1673
+msgid "common.md5_content_type_mapping.book_fiction"
+msgstr "বই (কল্পকাহিনী)"
+
+#: allthethings/page/views.py:1674
+msgid "common.md5_content_type_mapping.journal_article"
+msgstr "জার্নাল আর্টিকেল"
+
+#: allthethings/page/views.py:1675
+msgid "common.md5_content_type_mapping.standards_document"
+msgstr ""
+
+#: allthethings/page/views.py:1676
+msgid "common.md5_content_type_mapping.magazine"
+msgstr "পাযয়িকপত্রিকা"
+
+#: allthethings/page/views.py:1677
+msgid "common.md5_content_type_mapping.book_comic"
+msgstr "কমিক বই"
+
+#: allthethings/page/views.py:1679
+msgid "common.md5_content_type_mapping.book_any"
+msgstr "বই (কোনো)"
+
+#: allthethings/page/views.py:1724
+msgid "page.md5.box.download.lgrsnf"
+msgstr ""
+
+#: allthethings/page/views.py:1724 allthethings/page/views.py:1727
+#: allthethings/page/views.py:1730
+msgid "page.md5.box.download.extra_also_click_get"
+msgstr "(উপরে \"GET\" এও ক্লিক করুন)"
+
+#: allthethings/page/views.py:1724 allthethings/page/views.py:1727
+#: allthethings/page/views.py:1730
+msgid "page.md5.box.download.extra_click_get"
+msgstr "(শীর্ষে \"GET\" ক্লিক করুন)"
+
+#: allthethings/page/views.py:1727
+msgid "page.md5.box.download.lgrsfic"
+msgstr ""
+
+#: allthethings/page/views.py:1730
+msgid "page.md5.box.download.lgli"
+msgstr ""
+
+#: allthethings/page/views.py:1733
+msgid "page.md5.box.download.scihub"
+msgstr "Sci-Hub: %(doi)s"
+
+#: allthethings/page/views.py:1735 allthethings/page/views.py:1736
+#: allthethings/page/views.py:1737
+msgid "page.md5.box.download.ipfs_gateway"
+msgstr ""
+
+#: allthethings/page/views.py:1735
+msgid "page.md5.box.download.ipfs_gateway_extra"
+msgstr "(আপনাকে IPFS দিয়ে একাধিকবার চেষ্টা করতে হতে পারে)"
+
+#: allthethings/page/views.py:1739 allthethings/page/views.py:1740
+#: allthethings/page/views.py:1741 allthethings/page/views.py:1742
+msgid "page.md5.box.download.zlib_anon"
+msgstr ""
+
+#: allthethings/page/views.py:1744
+msgid "page.md5.box.download.zlib_tor"
+msgstr "Z-Library TOR"
+
+#: allthethings/page/views.py:1744
+msgid "page.md5.box.download.zlib_tor_extra"
+msgstr "(TOR ব্রাউজার প্রয়োজন)"
+
+#: allthethings/page/templates/page/about.html:3
+msgid "page.about.title"
+msgstr "সম্পর্কিত"
+
+#: allthethings/page/templates/page/about.html:6
+msgid "page.about.header"
+msgstr "সম্পর্কিত"
+
+#: allthethings/page/templates/page/about.html:9
+msgid "page.about.text1"
+msgstr ""
+
+#: allthethings/page/templates/page/about.html:13
+msgid "page.about.text2"
+msgstr ""
+
+#: allthethings/page/templates/page/about.html:17
+msgid "page.about.text3"
+msgstr ""
+
+#: allthethings/page/templates/page/about.html:21
+msgid "page.about.text4"
+msgstr ""
+
+#: allthethings/page/templates/page/about.html:24
+msgid "page.about.help.header"
+msgstr "How to help"
+
+#: allthethings/page/templates/page/about.html:27
+msgid "page.about.help.text"
+msgstr ""
+
+#: allthethings/page/templates/page/about.html:30
+#: allthethings/page/templates/page/about.html:31
+#: allthethings/page/templates/page/datasets.html:6
+#: allthethings/page/templates/page/datasets.html:7
+#: allthethings/page/templates/page/datasets_isbn_ranges.html:6
+#: allthethings/page/templates/page/datasets_isbn_ranges.html:7
+#: allthethings/page/templates/page/datasets_isbndb_scrape.html:6
+#: allthethings/page/templates/page/datasets_isbndb_scrape.html:7
+#: allthethings/page/templates/page/datasets_libgen_aux.html:6
+#: allthethings/page/templates/page/datasets_libgen_aux.html:7
+#: allthethings/page/templates/page/datasets_libgen_li.html:6
+#: allthethings/page/templates/page/datasets_libgen_li.html:7
+#: allthethings/page/templates/page/datasets_libgen_rs.html:6
+#: allthethings/page/templates/page/datasets_libgen_rs.html:7
+#: allthethings/page/templates/page/datasets_openlib.html:6
+#: allthethings/page/templates/page/datasets_openlib.html:7
+#: allthethings/page/templates/page/datasets_zlib_scrape.html:6
+#: allthethings/page/templates/page/datasets_zlib_scrape.html:7
+#: allthethings/page/templates/page/doi.html:54
+#: allthethings/page/templates/page/doi.html:55
+#: allthethings/page/templates/page/isbn.html:61
+#: allthethings/page/templates/page/isbn.html:62
+#: allthethings/page/templates/page/lgli_file.html:10
+#: allthethings/page/templates/page/lgli_file.html:11
+#: allthethings/page/templates/page/lgrs_book.html:12
+#: allthethings/page/templates/page/lgrs_book.html:13
+#: allthethings/page/templates/page/md5.html:86
+#: allthethings/page/templates/page/md5.html:87
+#: allthethings/page/templates/page/ol_book.html:8
+#: allthethings/page/templates/page/ol_book.html:9
+#: allthethings/page/templates/page/zlib_book.html:8
+#: allthethings/page/templates/page/zlib_book.html:9
+msgid "common.english_only"
+msgstr "পাঠ্য ইংরেজিতে নীচে চলতে থাকে।"
+
+#: allthethings/page/templates/page/doi.html:3
+msgid "page.doi.title"
+msgstr "DOI %(doi_input)s"
+
+#: allthethings/page/templates/page/doi.html:6
+msgid "page.doi.breadcrumbs"
+msgstr ""
+
+#: allthethings/page/templates/page/doi.html:9
+msgid "page.doi.invalid.header"
+msgstr ""
+
+#: allthethings/page/templates/page/doi.html:11
+msgid "page.doi.invalid.text"
+msgstr ""
+
+#: allthethings/page/templates/page/doi.html:15
+msgid "page.doi.box.header"
+msgstr "doi:%(doi_input)s"
+
+#: allthethings/page/templates/page/doi.html:18
+msgid "page.doi.box.canonical_url"
+msgstr ""
+
+#: allthethings/page/templates/page/doi.html:22
+msgid "page.doi.box.scihub"
+msgstr ""
+
+#: allthethings/page/templates/page/doi.html:27
+msgid "page.doi.results.text"
+msgstr ""
+
+#: allthethings/page/templates/page/doi.html:47
+msgid "page.doi.results.none"
+msgstr ""
+
+#: allthethings/page/templates/page/doi.html:51
+#: allthethings/page/templates/page/isbn.html:58
+#: allthethings/page/templates/page/md5.html:83
+msgid "common.tech_details"
+msgstr "প্রযুক্তিগত বিবরণ (ইংরেজিতে)"
+
+#: allthethings/page/templates/page/donate.html:3
+msgid "page.donate.title"
+msgstr "দান করুন"
+
+#: allthethings/page/templates/page/donate.html:6
+msgid "page.donate.header"
+msgstr "দান করুন"
+
+#: allthethings/page/templates/page/donate.html:9
+msgid "page.donate.text1"
+msgstr ""
+
+#: allthethings/page/templates/page/donate.html:13
+msgid "page.donate.text2"
+msgstr ""
+
+#: allthethings/page/templates/page/donate.html:17
+msgid "page.donate.text3"
+msgstr ""
+
+#: allthethings/page/templates/page/donate.html:21
+msgid "page.donate.text4"
+msgstr ""
+
+#: allthethings/page/templates/page/donate.html:55
+msgid "page.donate.nav.paypal"
+msgstr "Paypal"
+
+#: allthethings/page/templates/page/donate.html:56
+msgid "page.donate.nav.cc"
+msgstr ""
+
+#: allthethings/page/templates/page/donate.html:57
+msgid "page.donate.nav.crypto"
+msgstr ""
+
+#: allthethings/page/templates/page/donate.html:58
+msgid "page.donate.nav.alipay"
+msgstr "Alipay 支付宝"
+
+#: allthethings/page/templates/page/donate.html:59
+msgid "page.donate.nav.pix"
+msgstr "Pix"
+
+#: allthethings/page/templates/page/donate.html:60
+msgid "page.donate.nav.faq"
+msgstr ""
+
+#: allthethings/page/templates/page/donate.html:64
+msgid "page.donate.paypal.header"
+msgstr "Paypal"
+
+#: allthethings/page/templates/page/donate.html:67
+msgid "page.donate.paypal.text"
+msgstr ""
+
+#: allthethings/page/templates/page/donate.html:71
+#: allthethings/page/templates/page/donate.html:132
+msgid "page.donate.strange_account"
+msgstr ""
+
+#: allthethings/page/templates/page/donate.html:75
+#: allthethings/page/templates/page/donate.html:101
+#: allthethings/page/templates/page/donate.html:120
+#: allthethings/page/templates/page/donate.html:145
+#: allthethings/page/templates/page/donate.html:189
+#: allthethings/page/templates/page/donate.html:202
+msgid "page.donate.text_thank_you"
+msgstr ""
+
+#: allthethings/page/templates/page/donate.html:80
+msgid "page.donate.cc.header"
+msgstr ""
+
+#: allthethings/page/templates/page/donate.html:83
+msgid "page.donate.cc.text1"
+msgstr ""
+
+#: allthethings/page/templates/page/donate.html:87
+msgid "page.donate.cc.text2"
+msgstr ""
+
+#: allthethings/page/templates/page/donate.html:91
+msgid "page.donate.cc.steps.header"
+msgstr ""
+
+#: allthethings/page/templates/page/donate.html:95
+msgid "page.donate.cc.steps.list1"
+msgstr ""
+
+#: allthethings/page/templates/page/donate.html:96
+msgid "page.donate.cc.steps.list2"
+msgstr ""
+
+#: allthethings/page/templates/page/donate.html:97
+msgid "page.donate.cc.steps.list3"
+msgstr ""
+
+#: allthethings/page/templates/page/donate.html:106
+msgid "page.donate.crypto.header"
+msgstr ""
+
+#: allthethings/page/templates/page/donate.html:109
+msgid "page.donate.crypto.intro"
+msgstr ""
+
+#: allthethings/page/templates/page/donate.html:113
+msgid "page.donate.crypto.btc_bch_note"
+msgstr ""
+
+#: allthethings/page/templates/page/donate.html:125
+msgid "page.donate.alipay.header"
+msgstr "Alipay 支付宝"
+
+#: allthethings/page/templates/page/donate.html:128
+#: allthethings/page/templates/page/donate.html:156
+msgid "page.donate.alipay.intro"
+msgstr ""
+
+#: allthethings/page/templates/page/donate.html:137
+msgid "page.donate.alipay.url"
+msgstr ""
+
+#: allthethings/page/templates/page/donate.html:150
+#: allthethings/page/templates/page/donate.html:207
+msgid "page.donate.out_of_order"
+msgstr ""
+
+#: allthethings/page/templates/page/donate.html:195
+msgid "page.donate.pix.header"
+msgstr "Pix"
+
+#: allthethings/page/templates/page/donate.html:198
+msgid "page.donate.pix.text"
+msgstr ""
+
+#: allthethings/page/templates/page/donate.html:213
+msgid "page.donate.faq.header"
+msgstr ""
+
+#: allthethings/page/templates/page/donate.html:216
+msgid "page.donate.faq.text_other_payment1"
+msgstr ""
+
+#: allthethings/page/templates/page/donate.html:220
+msgid "page.donate.faq.text_other_payment2"
+msgstr ""
+
+#: allthethings/page/templates/page/donate.html:224
+msgid "page.donate.faq.text_large_donation"
+msgstr ""
+
+#: allthethings/page/templates/page/donate.html:228
+msgid "page.donate.faq.text_other_contribs"
+msgstr ""
+
+#: allthethings/page/templates/page/home.html:17
+msgid "page.home.progress_bar.text"
+msgstr "মানবতার লিখিত ঐতিহ্যের 5%% চিরকালের জন্য সংরক্ষিত %(info_icon)s"
+
+#: allthethings/page/templates/page/home.html:22
+msgid "page.home.intro"
+msgstr ""
+
+#: allthethings/page/templates/page/home.html:25
+msgid "page.home.search.header"
+msgstr "অনুসন্ধান করুন"
+
+#: allthethings/page/templates/page/home.html:28
+msgid "page.home.search.intro"
+msgstr ""
+
+#: allthethings/page/templates/page/home.html:33
+#: allthethings/page/templates/page/search.html:50
+#: allthethings/templates/layouts/index.html:214
+msgid "common.search.placeholder"
+msgstr "অনুসন্ধান শিরোনাম, লেখক, ভাষা, ফাইলের ধরন, ISBN, MD5, …"
+
+#: allthethings/page/templates/page/home.html:34
+#: allthethings/page/templates/page/search.html:51
+msgid "common.search.submit"
+msgstr "অনুসন্ধান করুন"
+
+#: allthethings/page/templates/page/home.html:38
+msgid "page.home.explore.header"
+msgstr ""
+
+#: allthethings/page/templates/page/home.html:41
+msgid "page.home.explore.intro"
+msgstr ""
+
+#: allthethings/page/templates/page/isbn.html:3
+msgid "page.isbn.title"
+msgstr "ISBN %(isbn_input)s"
+
+#: allthethings/page/templates/page/isbn.html:6
+msgid "page.isbn.breadcrumbs"
+msgstr ""
+
+#: allthethings/page/templates/page/isbn.html:9
+msgid "page.isbn.invalid.header"
+msgstr ""
+
+#: allthethings/page/templates/page/isbn.html:11
+msgid "page.isbn.invalid.text"
+msgstr ""
+
+#: allthethings/page/templates/page/isbn.html:29
+msgid "page.isbn.results.text"
+msgstr ""
+
+#: allthethings/page/templates/page/isbn.html:52
+msgid "page.isbn.results.none"
+msgstr ""
+
+#: allthethings/page/templates/page/md5.html:12
+msgid "page.md5.breadcrumbs"
+msgstr ""
+
+#: allthethings/page/templates/page/md5.html:15
+msgid "page.md5.invalid.header"
+msgstr ""
+
+#: allthethings/page/templates/page/md5.html:17
+msgid "page.md5.invalid.text"
+msgstr ""
+
+#: allthethings/page/templates/page/md5.html:30
+msgid "page.md5.box.issues.text1"
+msgstr ""
+
+#: allthethings/page/templates/page/md5.html:37
+msgid "page.md5.box.issues.text2"
+msgstr ""
+
+#: allthethings/page/templates/page/md5.html:39
+msgid "page.md5.box.download.text"
+msgstr "এখান থেকে বিনামূল্যে ইবুক/ফাইল %(extension)s ডাউনলোড করুন:"
+
+#: allthethings/page/templates/page/md5.html:44
+msgid "page.md5.box.download.option"
+msgstr ""
+
+#: allthethings/page/templates/page/md5.html:48
+msgid "page.md5.box.download.no_issues_download_options_explanation"
+msgstr ""
+
+#: allthethings/page/templates/page/md5.html:50
+msgid "page.md5.box.download.no_issues_notice"
+msgstr "সমস্ত আয়না একই ফাইল পরিবেশন করে, এবং ব্যবহার করা নিরাপদ হওয়া উচিত। এটি বলেছে, ইন্টারনেট থেকে ফাইল ডাউনলোড করার সময় সর্বদা সতর্ক থাকুন। উদাহরণস্বরূপ, আপনার ডিভাইসগুলিকে আপডেট রাখতে ভুলবেন না।"
+
+#: allthethings/page/templates/page/md5.html:53
+msgid "page.md5.box.download.no_hosting"
+msgstr ""
+
+#: allthethings/page/templates/page/search.html:4
+msgid "page.search.title.results"
+msgstr ""
+
+#: allthethings/page/templates/page/search.html:4
+msgid "page.search.title.new"
+msgstr ""
+
+#: allthethings/page/templates/page/search.html:10
+msgid "page.search.breadcrumbs.results_more"
+msgstr ""
+
+#: allthethings/page/templates/page/search.html:10
+msgid "page.search.breadcrumbs.results"
+msgstr ""
+
+#: allthethings/page/templates/page/search.html:12
+msgid "page.search.breadcrumbs.error"
+msgstr ""
+
+#: allthethings/page/templates/page/search.html:15
+msgid "page.search.breadcrumbs.new"
+msgstr "অনুসন্ধান ▶ নতুন অনুসন্ধান"
+
+#: allthethings/page/templates/page/search.html:18
+msgid "page.search.header.update_info"
+msgstr ""
+
+#: allthethings/page/templates/page/search.html:23
+msgid "page.search.filters.language.header"
+msgstr "ভাষা"
+
+#: allthethings/page/templates/page/search.html:29
+msgid "page.search.filters.content.header"
+msgstr "বিষয়বস্তু"
+
+#: allthethings/page/templates/page/search.html:35
+msgid "page.search.filters.filetype.header"
+msgstr "ফাইলের ধরন"
+
+#: allthethings/page/templates/page/search.html:41
+msgid "page.search.filters.sorting.most_relevant"
+msgstr "সবচেয়ে প্রাসঙ্গিক"
+
+#: allthethings/page/templates/page/search.html:42
+msgid "page.search.filters.sorting.newest"
+msgstr "সবথেকে নতুন"
+
+#: allthethings/page/templates/page/search.html:43
+msgid "page.search.filters.sorting.oldest"
+msgstr "প্রবীণতম"
+
+#: allthethings/page/templates/page/search.html:44
+msgid "page.search.filters.sorting.largest"
+msgstr ""
+
+#: allthethings/page/templates/page/search.html:45
+msgid "page.search.filters.sorting.smallest"
+msgstr "পব চেয়ে ছেটে"
+
+#: allthethings/page/templates/page/search.html:57
+msgid "page.search.results.error.header"
+msgstr "অনুসন্ধানের সময় ত্রুটি।"
+
+#: allthethings/page/templates/page/search.html:59
+msgid "page.search.results.error.text"
+msgstr ""
+
+#: allthethings/page/templates/page/search.html:62
+msgid "page.search.results.none"
+msgstr ""
+
+#: allthethings/page/templates/page/search.html:68
+msgid "page.search.results.partial_more"
+msgstr ""
+
+#: allthethings/page/templates/page/search.html:68
+msgid "page.search.results.partial"
+msgstr ""
+
+#: allthethings/page/templates/page/search.html:85
+msgid "page.search.results.issues"
+msgstr ""
+
+#: allthethings/templates/layouts/index.html:4
+msgid "layout.index.title"
+msgstr "আনার আর্কাইভ"
+
+#: allthethings/templates/layouts/index.html:24
+msgid "layout.index.header.banner.new_donation_method"
+msgstr ""
+
+#: allthethings/templates/layouts/index.html:56
+msgid "layout.index.header.title"
+msgstr "আনার আর্কাইভ"
+
+#: allthethings/templates/layouts/index.html:158
+msgid "layout.index.header.tagline"
+msgstr "🔍 ছায়া লাইব্রেরির সার্চ ইঞ্জিন: বই, পেপার, কমিকস, ম্যাগাজিন। ⭐️ জেড-লাইব্রেরি, লাইব্রেরি জেনেসিস, সাই-হাব। ⚙️ ওপেন সোর্স কোড এবং ডেটার মাধ্যমে সম্পূর্ণ স্থিতিস্থাপক। ❤️ শব্দটি ছড়িয়ে দিন: এখানে সবাইকে স্বাগতম!"
+
+#: allthethings/templates/layouts/index.html:190
+#: allthethings/templates/layouts/index.html:196
+#: allthethings/templates/layouts/index.html:204
+msgid "layout.index.header.nav.about"
+msgstr "সম্পর্কিত"
+
+#: allthethings/templates/layouts/index.html:191
+#: allthethings/templates/layouts/index.html:197
+#: allthethings/templates/layouts/index.html:205
+msgid "layout.index.header.nav.datasets"
+msgstr ""
+
+#: allthethings/templates/layouts/index.html:192
+#: allthethings/templates/layouts/index.html:198
+#: allthethings/templates/layouts/index.html:203
+msgid "layout.index.header.nav.home"
+msgstr "বাড়ি"
+
+#: allthethings/templates/layouts/index.html:206
+msgid "layout.index.header.nav.annasblog"
+msgstr ""
+
+#: allthethings/templates/layouts/index.html:207
+msgid "layout.index.header.nav.annassoftware"
+msgstr ""
+
+#: allthethings/templates/layouts/index.html:208
+msgid "layout.index.header.nav.translate"
+msgstr ""
+
+#: allthethings/templates/layouts/index.html:210
+msgid "layout.index.header.nav.donate"
+msgstr "দান করুন"
+
+#: allthethings/templates/layouts/index.html:211
+msgid "layout.index.header.nav.search"
+msgstr "অনুসন্ধান করুন"
+
+#: allthethings/templates/layouts/index.html:223
+msgid "layout.index.footer.list1.header"
+msgstr "আনার আর্কাইভ"
+
+#: allthethings/templates/layouts/index.html:224
+msgid "layout.index.footer.list1.home"
+msgstr "বাড়ি"
+
+#: allthethings/templates/layouts/index.html:225
+msgid "layout.index.footer.list1.about"
+msgstr "সম্পর্কিত"
+
+#: allthethings/templates/layouts/index.html:226
+msgid "layout.index.footer.list1.donate"
+msgstr "দান করুন"
+
+#: allthethings/templates/layouts/index.html:227
+msgid "layout.index.footer.list1.datasets"
+msgstr ""
+
+#: allthethings/templates/layouts/index.html:240
+msgid "layout.index.footer.list2.header"
+msgstr ""
+
+#: allthethings/templates/layouts/index.html:241
+msgid "layout.index.footer.list2.twitter"
+msgstr "Twitter"
+
+#: allthethings/templates/layouts/index.html:241
+msgid "layout.index.footer.list2.reddit"
+msgstr "Reddit"
+
+#: allthethings/templates/layouts/index.html:241
+msgid "layout.index.footer.list2.subreddit"
+msgstr "Subreddit"
+
+#: allthethings/templates/layouts/index.html:242
+msgid "layout.index.footer.list2.blog"
+msgstr ""
+
+#: allthethings/templates/layouts/index.html:243
+msgid "layout.index.footer.list2.software"
+msgstr ""
+
+#: allthethings/templates/layouts/index.html:244
+msgid "layout.index.footer.list2.translate"
+msgstr ""
+
+#: allthethings/templates/layouts/index.html:250
+msgid "layout.index.footer.list3.header"
+msgstr "বিকল্প"
+
+#~ msgid "page.md5.box.download.mirror"
+#~ msgstr "মিরর #%(num)d: %(link)s %(extra)s"
+

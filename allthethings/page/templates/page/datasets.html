@@ -1,0 +1,109 @@
+{% extends "layouts/index.html" %}
+
+{% block title %}Datasets{% endblock %}
+
+{% block body %}
+  {% if gettext('common.english_only') | trim %}
+    <p class="mb-4 font-bold">{{ gettext('common.english_only') }}</p>
+  {% endif %}
+
+  <div lang="en">
+    <h2 class="mt-4 mb-1 text-3xl font-bold">Datasets</h2>
+
+    <p class="mb-4">
+      Our mission is to archive all the books in the world, and make them widely accessible. To this end, we believe that all books should be mirrored far and wide. This ensures redundancy and resiliency.
+    </p>
+
+    <p class="mb-4">
+      The processed data that we use on Anna’s Archive is not available directly, but since Anna’s Archive is fully open source, it can be fairly easily <a href="https://annas-software.org/AnnaArchivist/annas-archive/-/tree/main/data-imports">reconstructed</a>. The scripts on that page will automatically download all the requisite metadata from the sources mentioned below.
+    </p>
+
+    <p><strong>Our projects</strong></p>
+
+    <p class="mb-4">
+      We manage a number of projects ourselves. Our work was previously called the “Pirate Library Mirror”, but we’ve now merged this work with Anna’s Archive. Since we don’t directly host any content on Anna’s Archive, please find <a href="http://2urmf2mk2dhmz4km522u4yfy2ynbzkbejf2cvmpcbzhpffvcuksrz6ad.onion">our data on Tor</a>.
+    </p>
+      
+    <table class="mb-4 w-[100%]">
+      <tr>
+        <th class="p-2 align-top text-left" width="22%"></th>
+        <th class="p-2 align-top text-left" width="15%">Updated</th>
+        <th class="p-2 align-top text-left" width="25%">Type</th>
+        <th class="p-2 align-top text-left" width="38%">Status</th>
+      </tr>
+      <tr class="bg-[#f2f2f2]">
+        <td class="p-2 align-top"><a href="/datasets/zlib_scrape">Z-Library scrape</a></td>
+        <td class="p-2 align-top whitespace-nowrap">2022-11-22</td>
+        <td class="p-2 align-top">Books</td>
+        <td class="p-2 align-top">• Will update when situation stabilizes</td>
+      </tr>
+      <tr>
+        <td class="p-2 align-top"><a href="/datasets/isbndb_scrape">ISBNdb scrape</a></td>
+        <td class="p-2 align-top whitespace-nowrap">2022-09</td>
+        <td class="p-2 align-top">Book metadata</td>
+        <td class="p-2 align-top">• Update planned later in 2023<br>• Not yet used in search results</td>
+      </tr>
+      <tr class="bg-[#f2f2f2]">
+        <td class="p-2 align-top"><a href="/datasets/libgen_aux">Libgen auxiliary data</a></td>
+        <td class="p-2 align-top whitespace-nowrap">2022-12-09</td>
+        <td class="p-2 align-top">Book covers</td>
+        <td class="p-2 align-top">• No updates planned<br>• Not used in Anna’s Archive</td>
+      </tr>
+    </table>
+
+    <p><strong>Shadow library sources</strong></p>
+
+    <p class="mb-4">
+      In addition to our own projects, we use data that is freely shared by <a href="https://en.wikipedia.org/wiki/Shadow_library">shadow libraries</a>.
+      Shadow libraries are libraries or archives that are not legal in every country around the world.
+    </p>
+
+    <table class="mb-4 w-[100%]">
+      <tr>
+        <th class="p-2 align-top text-left" width="22%"></th>
+        <th class="p-2 align-top text-left" width="15%">Updated</th>
+        <th class="p-2 align-top text-left" width="25%">Type</th>
+        <th class="p-2 align-top text-left" width="38%">Status</th>
+      </tr>
+      <tr class="bg-[#f2f2f2]" class="bg-[#f2f2f2]">
+        <td class="p-2 align-top"><a href="/datasets/libgen_rs">Libgen.rs</a></td>
+        <td class="p-2 align-top whitespace-nowrap">{{ libgenrs_date }}</td>
+        <td class="p-2 align-top">Books, papers</td>
+        <td class="p-2 align-top">• Monthly updated<br>• Fully open and widely mirrored</td>
+      </tr>
+      <tr>
+        <td class="p-2 align-top"><a href="/datasets/libgen_li">Libgen.li</a></td>
+        <td class="p-2 align-top whitespace-nowrap">{{ libgenli_date }}</td>
+        <td class="p-2 align-top">Books, papers, comics, magazines, standard documents</td>
+        <td class="p-2 align-top">• Monthly updated<br>• Open metadata<br>• Partially open content</td>
+      </tr>
+    </table>
+
+    <p><strong>Open sources</strong></p>
+
+    <p class="mb-4">
+      We also include fully open sources of data. These are projects that aim to be fully legal around the world.
+    </p>
+
+    <table class="mb-4 w-[100%]">
+      <tr>
+        <th class="p-2 align-top text-left" width="22%"></th>
+        <th class="p-2 align-top text-left" width="15%">Updated</th>
+        <th class="p-2 align-top text-left" width="25%">Type</th>
+        <th class="p-2 align-top text-left" width="38%">Status</th>
+      </tr>
+      <tr class="bg-[#f2f2f2]">
+        <td class="p-2 align-top"><a href="/datasets/openlib">Open Library</a></td>
+        <td class="p-2 align-top whitespace-nowrap">{{ openlib_date }}</td>
+        <td class="p-2 align-top">Book metadata</td>
+        <td class="p-2 align-top">• Monthly updated<br>• Not yet used in search results</td>
+      </tr>
+      <tr>
+        <td class="p-2 align-top"><a href="/datasets/isbn_ranges">International ISBN Agency Ranges</a></td>
+        <td class="p-2 align-top whitespace-nowrap">2022-02-11</td>
+        <td class="p-2 align-top">ISBN country information</td>
+        <td class="p-2 align-top">• Updated infrequently<br>• Not yet used in search results</td>
+      </tr>
+    </table>
+  </div>
+{% endblock %}

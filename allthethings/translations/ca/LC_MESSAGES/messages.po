@@ -1,0 +1,672 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-02-28 07:05+0000\n"
+"PO-Revision-Date: 2023-02-28 07:05+0000\n"
+"Last-Translator: AnnaArchivist <AnnaArchivist@proton.me>\n"
+"Language-Team: Catalan <https://translate.annas-software.org/projects/"
+"annas-archive/main-website/ca/>\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.15\n"
+
+#: allthethings/page/views.py:1661
+msgid "common.md5_problem_type_mapping.lgrsnf_visible"
+msgstr "No visible a la Llibreria Genesis \".rs-fork\" No-Ficció"
+
+#: allthethings/page/views.py:1662
+msgid "common.md5_problem_type_mapping.lgrsfic_visible"
+msgstr "No visible a la Llibreria Genesis \".rs-fork\" Ficció"
+
+#: allthethings/page/views.py:1663
+msgid "common.md5_problem_type_mapping.lgli_visible"
+msgstr "No visible a la Llibreria Genesis \".li-fork\""
+
+#: allthethings/page/views.py:1664
+msgid "common.md5_problem_type_mapping.lgli_broken"
+msgstr "Marcat com a trencat a la Llibreria Genesis \".li-fork\""
+
+#: allthethings/page/views.py:1665
+msgid "common.md5_problem_type_mapping.zlib_missing"
+msgstr "Falta al Z-Library"
+
+#: allthethings/page/views.py:1671
+msgid "common.md5_content_type_mapping.book_unknown"
+msgstr "Llibre (desconegut)"
+
+#: allthethings/page/views.py:1672
+msgid "common.md5_content_type_mapping.book_nonfiction"
+msgstr "Llibre (no-ficció)"
+
+#: allthethings/page/views.py:1673
+msgid "common.md5_content_type_mapping.book_fiction"
+msgstr "Llibre (ficció)"
+
+#: allthethings/page/views.py:1674
+msgid "common.md5_content_type_mapping.journal_article"
+msgstr "Article de revista"
+
+#: allthethings/page/views.py:1675
+msgid "common.md5_content_type_mapping.standards_document"
+msgstr "Document d'estàndards"
+
+#: allthethings/page/views.py:1676
+msgid "common.md5_content_type_mapping.magazine"
+msgstr "Revista"
+
+#: allthethings/page/views.py:1677
+msgid "common.md5_content_type_mapping.book_comic"
+msgstr "Còmic"
+
+#: allthethings/page/views.py:1679
+msgid "common.md5_content_type_mapping.book_any"
+msgstr "Llibre (qualsevol)"
+
+#: allthethings/page/views.py:1724
+msgid "page.md5.box.download.lgrsnf"
+msgstr "Lliberia Genesis '.rs-fork\" No-ficció"
+
+#: allthethings/page/views.py:1724 allthethings/page/views.py:1727
+#: allthethings/page/views.py:1730
+msgid "page.md5.box.download.extra_also_click_get"
+msgstr "(prem també \"GET\" adalt)"
+
+#: allthethings/page/views.py:1724 allthethings/page/views.py:1727
+#: allthethings/page/views.py:1730
+msgid "page.md5.box.download.extra_click_get"
+msgstr "(prem \"GET\" adalt)"
+
+#: allthethings/page/views.py:1727
+msgid "page.md5.box.download.lgrsfic"
+msgstr "Lliberia Genesis \".rs-fork\" Ficció"
+
+#: allthethings/page/views.py:1730
+msgid "page.md5.box.download.lgli"
+msgstr "Llibreria Genesis \".li-fork\""
+
+#: allthethings/page/views.py:1733
+msgid "page.md5.box.download.scihub"
+msgstr "Sci-Hub: %(doi)s"
+
+#: allthethings/page/views.py:1735 allthethings/page/views.py:1736
+#: allthethings/page/views.py:1737
+msgid "page.md5.box.download.ipfs_gateway"
+msgstr "Pasarel·la IPFS #%(num)d"
+
+#: allthethings/page/views.py:1735
+msgid "page.md5.box.download.ipfs_gateway_extra"
+msgstr "(potser hauries d'intentar-ho múltiples cops si fas servir IPFS)"
+
+#: allthethings/page/views.py:1739 allthethings/page/views.py:1740
+#: allthethings/page/views.py:1741 allthethings/page/views.py:1742
+msgid "page.md5.box.download.zlib_anon"
+msgstr "Z-library mirall anònim #%(num)d"
+
+#: allthethings/page/views.py:1744
+msgid "page.md5.box.download.zlib_tor"
+msgstr "Z-Library TOR"
+
+#: allthethings/page/views.py:1744
+msgid "page.md5.box.download.zlib_tor_extra"
+msgstr "(requereix navegador TOR)"
+
+#: allthethings/page/templates/page/about.html:3
+msgid "page.about.title"
+msgstr "Quant a"
+
+#: allthethings/page/templates/page/about.html:6
+msgid "page.about.header"
+msgstr "Quant a"
+
+#: allthethings/page/templates/page/about.html:9
+msgid "page.about.text1"
+msgstr "L'arxiu l'Anna és un cercador de codi obert, sense ànim de lucre per “<a href=\"https://ca.wikipedia.org/wiki/Biblioteca_a_l%%27ombra\">biblioteques a l'ombra</a>”. Va ser creat per <a href=\"http://annas-blog.org\">Anna</a>, la persona darrera de <a href=\"https://en.wikipedia.org/wiki/Pirate_Library_Mirror\">Pirate Library Mirror</a>, que es una copia de seguretat de la Z-Library shadow library. Ella sent que hi ha la necessitat d'un lloc centralitzat per cercar llibres, articles acadèmics, còmics, revistes i altres documents."
+
+#: allthethings/page/templates/page/about.html:13
+msgid "page.about.text2"
+msgstr "Creiem fermament en el flux lliure de la informació i en la preservació del coneixement i la cultura. Amb aquest motor de cerca, hem construït damunt les espatlles de gegants. Respectem profundament el treball dur de la gent que ha creat les diverses biblioteques a l'ombra, i tenim l'esperança que aquest motor de cerca eixampli la seva difusió."
+
+#: allthethings/page/templates/page/about.html:17
+msgid "page.about.text3"
+msgstr "Per estar al dia del nostre progrés, segueix Anna a <a href=\"https://twitter.com/AnnaArchivist\">Twitter</a> o <a href=\"https://www.reddit.com/r/Annas_Archive/\">Reddit</a>. Pwer preguntes i feedback contacteu Anna a %(email)s."
+
+#: allthethings/page/templates/page/about.html:21
+msgid "page.about.text4"
+msgstr "Si tens una queixa vàlida de DMCA, vés al final d'aquesta pàgina, o bé contacta'ns a %(email)s."
+
+#: allthethings/page/templates/page/about.html:24
+msgid "page.about.help.header"
+msgstr "Com ajudar"
+
+#: allthethings/page/templates/page/about.html:27
+msgid "page.about.help.text"
+msgstr "<li>1. Segueix-nos a <a href=\"https://twitter.com/AnnaArchivist\">Twitter</a>o<a href=\"https://www.reddit.com/r/Annas_Archive/\">Reddit</a>.</li><li>2. Parla de l'arxiu de l'Anna a Twitter, Reddit, Tiktok, Instagram, al teu bar o llibreria, o allà on vagis! No creiem en tancar les portes — si som derribats tornarem a aparèixer a un altre lloc, ja que el nostre codi i dades son completament oberts.</li><li>3. Si pots, considera <a href=\"/donate\">donar</a>.</li><li>4. Ajudar <a href=\"https://translate.annas-software.org/\">a traduir</a> el nostre lloc web a diferents idiomes.</li><li>5. Si ets un enginyer de software, considera contribuir al nostre<a href=\"https://annas-software.org/\">codi obert</a>, o alimentant els nostres <a href=\"https://en.wikipedia.org/wiki/Pirate_Library_Mirror\">torrents i IPFS</a>.</li>"
+
+#: allthethings/page/templates/page/about.html:30
+#: allthethings/page/templates/page/about.html:31
+#: allthethings/page/templates/page/datasets.html:6
+#: allthethings/page/templates/page/datasets.html:7
+#: allthethings/page/templates/page/datasets_isbn_ranges.html:6
+#: allthethings/page/templates/page/datasets_isbn_ranges.html:7
+#: allthethings/page/templates/page/datasets_isbndb_scrape.html:6
+#: allthethings/page/templates/page/datasets_isbndb_scrape.html:7
+#: allthethings/page/templates/page/datasets_libgen_aux.html:6
+#: allthethings/page/templates/page/datasets_libgen_aux.html:7
+#: allthethings/page/templates/page/datasets_libgen_li.html:6
+#: allthethings/page/templates/page/datasets_libgen_li.html:7
+#: allthethings/page/templates/page/datasets_libgen_rs.html:6
+#: allthethings/page/templates/page/datasets_libgen_rs.html:7
+#: allthethings/page/templates/page/datasets_openlib.html:6
+#: allthethings/page/templates/page/datasets_openlib.html:7
+#: allthethings/page/templates/page/datasets_zlib_scrape.html:6
+#: allthethings/page/templates/page/datasets_zlib_scrape.html:7
+#: allthethings/page/templates/page/doi.html:54
+#: allthethings/page/templates/page/doi.html:55
+#: allthethings/page/templates/page/isbn.html:61
+#: allthethings/page/templates/page/isbn.html:62
+#: allthethings/page/templates/page/lgli_file.html:10
+#: allthethings/page/templates/page/lgli_file.html:11
+#: allthethings/page/templates/page/lgrs_book.html:12
+#: allthethings/page/templates/page/lgrs_book.html:13
+#: allthethings/page/templates/page/md5.html:86
+#: allthethings/page/templates/page/md5.html:87
+#: allthethings/page/templates/page/ol_book.html:8
+#: allthethings/page/templates/page/ol_book.html:9
+#: allthethings/page/templates/page/zlib_book.html:8
+#: allthethings/page/templates/page/zlib_book.html:9
+msgid "common.english_only"
+msgstr "El text a sota només està en anglès."
+
+#: allthethings/page/templates/page/doi.html:3
+msgid "page.doi.title"
+msgstr "DOI %(doi_input)s"
+
+#: allthethings/page/templates/page/doi.html:6
+msgid "page.doi.breadcrumbs"
+msgstr "Datasets ▶ DOIs ▶ DOI %(doi_input)s"
+
+#: allthethings/page/templates/page/doi.html:9
+msgid "page.doi.invalid.header"
+msgstr "No trobat"
+
+#: allthethings/page/templates/page/doi.html:11
+msgid "page.doi.invalid.text"
+msgstr "\"%(doi_input)s\" no sembla un DOI. Hauria de començar per \"10.\" i tenir \"/\" a dins."
+
+#: allthethings/page/templates/page/doi.html:15
+msgid "page.doi.box.header"
+msgstr "doi:%(doi_input)s"
+
+#: allthethings/page/templates/page/doi.html:18
+msgid "page.doi.box.canonical_url"
+msgstr "URL Canònical: %(link)s"
+
+#: allthethings/page/templates/page/doi.html:22
+msgid "page.doi.box.scihub"
+msgstr "Aquest fitxer podriar ser-hi a %(link_open_tag)sSci-Hub</a>."
+
+#: allthethings/page/templates/page/doi.html:27
+msgid "page.doi.results.text"
+msgstr "Fitxers coincidents a la nostra base de dades:"
+
+#: allthethings/page/templates/page/doi.html:47
+msgid "page.doi.results.none"
+msgstr "No s'han trobat fitxers coincidents a la nostra base de dades."
+
+#: allthethings/page/templates/page/doi.html:51
+#: allthethings/page/templates/page/isbn.html:58
+#: allthethings/page/templates/page/md5.html:83
+msgid "common.tech_details"
+msgstr "Mostra ens detalls tècnics (en anglès)"
+
+#: allthethings/page/templates/page/donate.html:3
+msgid "page.donate.title"
+msgstr "Fes una donació"
+
+#: allthethings/page/templates/page/donate.html:6
+msgid "page.donate.header"
+msgstr "Fes una donació"
+
+#: allthethings/page/templates/page/donate.html:9
+msgid "page.donate.text1"
+msgstr "L'arxiu de l'Anna es un projecte sense ànim de lucres, de codi obert, a càrrec de voluntaris. Acceptem donacions per cobrir els nostres costos, que inclouen hostatjament, nomes de domini, desenvolupament i altres despeses."
+
+#: allthethings/page/templates/page/donate.html:13
+msgid "page.donate.text2"
+msgstr "Amb les vostres contribucions mantenim el lloc web funcionanat, milloresm les seves prestacion i preservem més coleccions."
+
+#: allthethings/page/templates/page/donate.html:17
+msgid "page.donate.text3"
+msgstr "Donacions recents: %(donations)s. Gràcies per la vostra generositat. Apreciem la vostra confiança en nosaltres, amb qualsevol quantitat que hagueu donat."
+
+#: allthethings/page/templates/page/donate.html:21
+msgid "page.donate.text4"
+msgstr "Per donar, seleccion el teu mètode preferit a sota. Si tens cap problema, si us plau contacta amb nosaltres a %(email)s."
+
+#: allthethings/page/templates/page/donate.html:55
+msgid "page.donate.nav.paypal"
+msgstr "Paypal"
+
+#: allthethings/page/templates/page/donate.html:56
+msgid "page.donate.nav.cc"
+msgstr "Tarjeta de crèdit/dèbit"
+
+#: allthethings/page/templates/page/donate.html:57
+msgid "page.donate.nav.crypto"
+msgstr "Cryptomonedes"
+
+#: allthethings/page/templates/page/donate.html:58
+msgid "page.donate.nav.alipay"
+msgstr "Alipay 支付宝"
+
+#: allthethings/page/templates/page/donate.html:59
+msgid "page.donate.nav.pix"
+msgstr "Pix"
+
+#: allthethings/page/templates/page/donate.html:60
+msgid "page.donate.nav.faq"
+msgstr "Preguntes"
+
+#: allthethings/page/templates/page/donate.html:64
+msgid "page.donate.paypal.header"
+msgstr "Paypal"
+
+#: allthethings/page/templates/page/donate.html:67
+msgid "page.donate.paypal.text"
+msgstr ""
+
+#: allthethings/page/templates/page/donate.html:71
+#: allthethings/page/templates/page/donate.html:132
+msgid "page.donate.strange_account"
+msgstr ""
+
+#: allthethings/page/templates/page/donate.html:75
+#: allthethings/page/templates/page/donate.html:101
+#: allthethings/page/templates/page/donate.html:120
+#: allthethings/page/templates/page/donate.html:145
+#: allthethings/page/templates/page/donate.html:189
+#: allthethings/page/templates/page/donate.html:202
+msgid "page.donate.text_thank_you"
+msgstr "Gràcies pel teu ajut! Sense vosaltres aquest projecte no seria possible."
+
+#: allthethings/page/templates/page/donate.html:80
+msgid "page.donate.cc.header"
+msgstr "Tarjeta de crèdit/dèbit"
+
+#: allthethings/page/templates/page/donate.html:83
+msgid "page.donate.cc.text1"
+msgstr "Fem servir Sendwyre per dipositar els diners al nostre moneder de Bitcon (BTC). Triga uns 5 minuts a completar-se."
+
+#: allthethings/page/templates/page/donate.html:87
+msgid "page.donate.cc.text2"
+msgstr "Aquest mètode requereix una transacció mínima de $30 i la comissión son $5 aproximadament."
+
+#: allthethings/page/templates/page/donate.html:91
+msgid "page.donate.cc.steps.header"
+msgstr "Passos:"
+
+#: allthethings/page/templates/page/donate.html:95
+msgid "page.donate.cc.steps.list1"
+msgstr "1. Copia l'adreça del nostre moneder de Bitcoin (BTC): %(address)s"
+
+#: allthethings/page/templates/page/donate.html:96
+msgid "page.donate.cc.steps.list2"
+msgstr "2. Ves a %(link_open_tag)saquesta pàgina</a> i clica a \"buy crypto instantly\""
+
+#: allthethings/page/templates/page/donate.html:97
+msgid "page.donate.cc.steps.list3"
+msgstr "3. Enganxa l'adreça del nostre moneder i segueix les instruccions"
+
+#: allthethings/page/templates/page/donate.html:106
+msgid "page.donate.crypto.header"
+msgstr "Cryptomonedes"
+
+#: allthethings/page/templates/page/donate.html:109
+msgid "page.donate.crypto.intro"
+msgstr "Si tens criptomonedes, aquestes son les nostres adreces:"
+
+#: allthethings/page/templates/page/donate.html:113
+msgid "page.donate.crypto.btc_bch_note"
+msgstr "(també funciona per BCH)"
+
+#: allthethings/page/templates/page/donate.html:125
+msgid "page.donate.alipay.header"
+msgstr "Alipay 支付宝"
+
+#: allthethings/page/templates/page/donate.html:128
+#: allthethings/page/templates/page/donate.html:156
+msgid "page.donate.alipay.intro"
+msgstr "Si us plau utilitza aquest compte d'Alipay per enviar la teva donació."
+
+#: allthethings/page/templates/page/donate.html:137
+msgid "page.donate.alipay.url"
+msgstr "URL"
+
+#: allthethings/page/templates/page/donate.html:150
+#: allthethings/page/templates/page/donate.html:207
+msgid "page.donate.out_of_order"
+msgstr ""
+
+#: allthethings/page/templates/page/donate.html:195
+msgid "page.donate.pix.header"
+msgstr "Pix"
+
+#: allthethings/page/templates/page/donate.html:198
+msgid "page.donate.pix.text"
+msgstr ""
+
+#: allthethings/page/templates/page/donate.html:213
+msgid "page.donate.faq.header"
+msgstr "Preguntes freqüents"
+
+#: allthethings/page/templates/page/donate.html:216
+msgid "page.donate.faq.text_other_payment1"
+msgstr "<div class=\"font-bold\">Teniu altres mitjans de pagament?</div> Actualment no. Molta gent no vol que existeixin arxius com aquest, per tant hem der curosos. Si pots ajudar a muntar un altre sistema de pagamenet segur (més pràctic), si us play contacta amb nosaltes a %(email)s."
+
+#: allthethings/page/templates/page/donate.html:220
+msgid "page.donate.faq.text_other_payment2"
+msgstr "Si el vostre mètode de pagament no es a la llista, el mes fàcil seria baixar-se <a href=\"https://www.coinbase.com/\">Coinbase</a> al teu mòbil, i comprar Bitcoin (BTC). Llavors podras enviar-lo a la nostra adreça: %(address)s. A molts paisos, només caldran uns minuts per fer-ho."
+
+#: allthethings/page/templates/page/donate.html:224
+msgid "page.donate.faq.text_large_donation"
+msgstr "<div class=\"font-bold\">Puc fer una donació gran?</div> Això seria fantàstic! Per donacions d'uns quants milers de dòlars, contacteu-nos directament a %(email)s."
+
+#: allthethings/page/templates/page/donate.html:228
+msgid "page.donate.faq.text_other_contribs"
+msgstr "<div class=\"font-bold\">Puc contribuir d'altres formes?</div> Si! Mireu <a href=\"/about\">la pàgina \"Quant a\"</a> sota “Com ajudar”."
+
+#: allthethings/page/templates/page/home.html:17
+msgid "page.home.progress_bar.text"
+msgstr "5%% del llegat escrit de la humanitat preservat per sempre %(info_icon)s"
+
+#: allthethings/page/templates/page/home.html:22
+msgid "page.home.intro"
+msgstr "<span class=\"italic font-bold\">L'arxiu de l'Anna</span> es un projecte que té per objectiu catalogar tots els llibres existents agregant dades de diferents fonts. També seguim el progrés de la humanitat cap a fer disponibles de manera fàcil tots aquests llibres en format digital a través de “<a href=\"https://ca.wikipedia.org/wiki/Biblioteca_a_l%%27ombra\">les biblioteques a l'ombra</a>”. Aprèn més a <a href=\"/about\">Quant a.</a>"
+
+#: allthethings/page/templates/page/home.html:25
+msgid "page.home.search.header"
+msgstr "Cerca"
+
+#: allthethings/page/templates/page/home.html:28
+msgid "page.home.search.intro"
+msgstr "Cerca al nostre catàleg de llibreries a l'ombra."
+
+#: allthethings/page/templates/page/home.html:33
+#: allthethings/page/templates/page/search.html:50
+#: allthethings/templates/layouts/index.html:214
+msgid "common.search.placeholder"
+msgstr "Cerca per títol, autor, idioma, tipus de fitxer, ISBN, MD5, …"
+
+#: allthethings/page/templates/page/home.html:34
+#: allthethings/page/templates/page/search.html:51
+msgid "common.search.submit"
+msgstr "Cerca"
+
+#: allthethings/page/templates/page/home.html:38
+msgid "page.home.explore.header"
+msgstr "Explora llibres"
+
+#: allthethings/page/templates/page/home.html:41
+msgid "page.home.explore.intro"
+msgstr "Aquests son una combinació de llibres populars i altres llibres que tenen una especial significació pel món de les biblioteques a l'ombra i de la preservació digital."
+
+#: allthethings/page/templates/page/isbn.html:3
+msgid "page.isbn.title"
+msgstr "ISBN %(isbn_input)s"
+
+#: allthethings/page/templates/page/isbn.html:6
+msgid "page.isbn.breadcrumbs"
+msgstr "Datasets ▶ ISBNs ▶ ISBN %(isbn_input)s"
+
+#: allthethings/page/templates/page/isbn.html:9
+msgid "page.isbn.invalid.header"
+msgstr "No trobat"
+
+#: allthethings/page/templates/page/isbn.html:11
+msgid "page.isbn.invalid.text"
+msgstr "“%(isbn_input)s” no es un ISBN vàlid. ISBNs son de longitud 10 o 13, sense comptar els guions. Tots els caràcters han de ser nombres, llevat el darrer caràcter, que també pot ser \"X\" El darrer caràcter es el \"dígit de control\", que deu coincidir amb valor de checksum calculat amb els altres digits. Ha de ser dins d'un rang vàlid, definit per the International ISBN Agency."
+
+#: allthethings/page/templates/page/isbn.html:29
+msgid "page.isbn.results.text"
+msgstr "Fitxers coincidents a la nostra base de dades:"
+
+#: allthethings/page/templates/page/isbn.html:52
+msgid "page.isbn.results.none"
+msgstr "Sense fitxers coincidents a la nostra base de dades."
+
+#: allthethings/page/templates/page/md5.html:12
+msgid "page.md5.breadcrumbs"
+msgstr "Datasets ▶ Files ▶ MD5 %(md5_input)s"
+
+#: allthethings/page/templates/page/md5.html:15
+msgid "page.md5.invalid.header"
+msgstr "No trobat"
+
+#: allthethings/page/templates/page/md5.html:17
+msgid "page.md5.invalid.text"
+msgstr "“%(md5_input)s” no ha estat trobat a la nostra base de dades."
+
+#: allthethings/page/templates/page/md5.html:30
+msgid "page.md5.box.issues.text1"
+msgstr "<span class=\"font-bold\">❌ Aquest fitxer podría tenir problemes i s'ha amagat d'una llibreria font.</span> De vegades es per la petició del titular dels drets d'autor, o perque hi ha una millor alternativa, per també pot ser per un problema amb el fitxer. Podria ser correcte descarregar-lo pero recomanem primer cercar un fitxer alternatiu. Més detalls a:"
+
+#: allthethings/page/templates/page/md5.html:37
+msgid "page.md5.box.issues.text2"
+msgstr "Si malgrat tot vols descarregar aquest fitxer, assegurat de fer servir un software actualitzat i de confiança."
+
+#: allthethings/page/templates/page/md5.html:39
+msgid "page.md5.box.download.text"
+msgstr "Descarrega el llibre electrònic/fitxer %(extension)s de:"
+
+#: allthethings/page/templates/page/md5.html:44
+msgid "page.md5.box.download.option"
+msgstr "Opció #%(num)d: %(link)s %(extra)s"
+
+#: allthethings/page/templates/page/md5.html:48
+msgid "page.md5.box.download.no_issues_download_options_explanation"
+msgstr ""
+
+#: allthethings/page/templates/page/md5.html:50
+msgid "page.md5.box.download.no_issues_notice"
+msgstr "Tots els miralls serveixen el mateix fitxer i son segurs. Dit això, sigues cautelós quan baixis fitxers d'internet. Per exemple, mantèn els dispositius actualitzats."
+
+#: allthethings/page/templates/page/md5.html:53
+msgid "page.md5.box.download.no_hosting"
+msgstr ""
+
+#: allthethings/page/templates/page/search.html:4
+msgid "page.search.title.results"
+msgstr "%(search_input)s - Cerca"
+
+#: allthethings/page/templates/page/search.html:4
+msgid "page.search.title.new"
+msgstr "Nova cerca"
+
+#: allthethings/page/templates/page/search.html:10
+msgid "page.search.breadcrumbs.results_more"
+msgstr "Cerca ▶ %(num)d+ resultats per <span class=\"italic\">%(search_input)s</span> (a les metadades de la shadow library)"
+
+#: allthethings/page/templates/page/search.html:10
+msgid "page.search.breadcrumbs.results"
+msgstr "Cerca ▶ %(num)d resultats per <span class=\"italic\">%(search_input)s</span> (a les metadades de la shadow library)"
+
+#: allthethings/page/templates/page/search.html:12
+msgid "page.search.breadcrumbs.error"
+msgstr "Cerca ▶ Error de cerca per <span class=\"italic\">%(search_input)s</span>"
+
+#: allthethings/page/templates/page/search.html:15
+msgid "page.search.breadcrumbs.new"
+msgstr "Cerca ▶ Nova cerca"
+
+#: allthethings/page/templates/page/search.html:18
+msgid "page.search.header.update_info"
+msgstr ""
+
+#: allthethings/page/templates/page/search.html:23
+msgid "page.search.filters.language.header"
+msgstr "Idioma"
+
+#: allthethings/page/templates/page/search.html:29
+msgid "page.search.filters.content.header"
+msgstr "Contingut"
+
+#: allthethings/page/templates/page/search.html:35
+msgid "page.search.filters.filetype.header"
+msgstr "Tipus de fitxer"
+
+#: allthethings/page/templates/page/search.html:41
+msgid "page.search.filters.sorting.most_relevant"
+msgstr "Més rellevant"
+
+#: allthethings/page/templates/page/search.html:42
+msgid "page.search.filters.sorting.newest"
+msgstr "El més recent"
+
+#: allthethings/page/templates/page/search.html:43
+msgid "page.search.filters.sorting.oldest"
+msgstr "El més antic"
+
+#: allthethings/page/templates/page/search.html:44
+msgid "page.search.filters.sorting.largest"
+msgstr "El més gran"
+
+#: allthethings/page/templates/page/search.html:45
+msgid "page.search.filters.sorting.smallest"
+msgstr "El més petit"
+
+#: allthethings/page/templates/page/search.html:57
+msgid "page.search.results.error.header"
+msgstr "Error durant la cerca."
+
+#: allthethings/page/templates/page/search.html:59
+msgid "page.search.results.error.text"
+msgstr "Prova <a href=\"javascript:location.reload()\">a recarregar la pàgina</a>. Si el problema persisteix, si us plau fes nos ho saber a <a href=\"https://twitter.com/AnnaArchivist\">Twitter</a> o <a href=\"https://www.reddit.com/r/Annas_Archive/\">Reddit</a>."
+
+#: allthethings/page/templates/page/search.html:62
+msgid "page.search.results.none"
+msgstr "<span class=\"font-bold\">Fitxers no trobats.</span> Prova amb menys o diferents termes de cerca i filtres."
+
+#: allthethings/page/templates/page/search.html:68
+msgid "page.search.results.partial_more"
+msgstr "%(num)d+ coincidències parcials"
+
+#: allthethings/page/templates/page/search.html:68
+msgid "page.search.results.partial"
+msgstr "%(num)d coincidències parcials"
+
+#: allthethings/page/templates/page/search.html:85
+msgid "page.search.results.issues"
+msgstr "❌ Aquest fitxer pot tenir problemes."
+
+#: allthethings/templates/layouts/index.html:4
+msgid "layout.index.title"
+msgstr "Arxiu de l'Anna"
+
+#: allthethings/templates/layouts/index.html:24
+msgid "layout.index.header.banner.new_donation_method"
+msgstr ""
+
+#: allthethings/templates/layouts/index.html:56
+msgid "layout.index.header.title"
+msgstr "Arxiu de l'Anna"
+
+#: allthethings/templates/layouts/index.html:158
+msgid "layout.index.header.tagline"
+msgstr "🔍 Cercador de biblioteques a l'ombra: llibres, articles, còmics, revistes. ⭐️ Z-Library, Library Genesis, Sci-Hub. ⚙️ Robust fent servir codi i dades oberts. ❤️ Difòn: tothom es benvingut aquí!"
+
+#: allthethings/templates/layouts/index.html:190
+#: allthethings/templates/layouts/index.html:196
+#: allthethings/templates/layouts/index.html:204
+msgid "layout.index.header.nav.about"
+msgstr "Quant a"
+
+#: allthethings/templates/layouts/index.html:191
+#: allthethings/templates/layouts/index.html:197
+#: allthethings/templates/layouts/index.html:205
+msgid "layout.index.header.nav.datasets"
+msgstr "Datasets"
+
+#: allthethings/templates/layouts/index.html:192
+#: allthethings/templates/layouts/index.html:198
+#: allthethings/templates/layouts/index.html:203
+msgid "layout.index.header.nav.home"
+msgstr "Pàgina principal"
+
+#: allthethings/templates/layouts/index.html:206
+msgid "layout.index.header.nav.annasblog"
+msgstr ""
+
+#: allthethings/templates/layouts/index.html:207
+msgid "layout.index.header.nav.annassoftware"
+msgstr ""
+
+#: allthethings/templates/layouts/index.html:208
+msgid "layout.index.header.nav.translate"
+msgstr ""
+
+#: allthethings/templates/layouts/index.html:210
+msgid "layout.index.header.nav.donate"
+msgstr "Donar"
+
+#: allthethings/templates/layouts/index.html:211
+msgid "layout.index.header.nav.search"
+msgstr "Cerca"
+
+#: allthethings/templates/layouts/index.html:223
+msgid "layout.index.footer.list1.header"
+msgstr "Arxiu de l'Anna"
+
+#: allthethings/templates/layouts/index.html:224
+msgid "layout.index.footer.list1.home"
+msgstr "Pàgina principal"
+
+#: allthethings/templates/layouts/index.html:225
+msgid "layout.index.footer.list1.about"
+msgstr "Quant a"
+
+#: allthethings/templates/layouts/index.html:226
+msgid "layout.index.footer.list1.donate"
+msgstr "Donar"
+
+#: allthethings/templates/layouts/index.html:227
+msgid "layout.index.footer.list1.datasets"
+msgstr "Datasets"
+
+#: allthethings/templates/layouts/index.html:240
+msgid "layout.index.footer.list2.header"
+msgstr "Estigués en contacte"
+
+#: allthethings/templates/layouts/index.html:241
+msgid "layout.index.footer.list2.twitter"
+msgstr "Twitter"
+
+#: allthethings/templates/layouts/index.html:241
+msgid "layout.index.footer.list2.reddit"
+msgstr "Reddit"
+
+#: allthethings/templates/layouts/index.html:241
+msgid "layout.index.footer.list2.subreddit"
+msgstr "Subreddit"
+
+#: allthethings/templates/layouts/index.html:242
+msgid "layout.index.footer.list2.blog"
+msgstr "Blog de l'Anna"
+
+#: allthethings/templates/layouts/index.html:243
+msgid "layout.index.footer.list2.software"
+msgstr "Software de l'Anna"
+
+#: allthethings/templates/layouts/index.html:244
+msgid "layout.index.footer.list2.translate"
+msgstr ""
+
+#: allthethings/templates/layouts/index.html:250
+msgid "layout.index.footer.list3.header"
+msgstr ""
+
+#~ msgid "page.md5.box.download.mirror"
+#~ msgstr "Mirall #%(num)d: %(link)s %(extra)s"

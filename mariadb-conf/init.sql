@@ -1,0 +1,3 @@
+-- SET GLOBAL computed_search_md5_objs_cache.key_buffer_size = 38125277696;
+-- CACHE INDEX allthethings.computed_search_md5_objs IN computed_search_md5_objs_cache;
+-- LOAD INDEX INTO CACHE allthethings.computed_search_md5_objs;
