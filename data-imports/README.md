@@ -1,11 +1,16 @@
 Importing the data has been mostly automated, but it's still advisable to run the individual scripts yourself. It can take several days to run everything, but we also support only updating part of the data.
+导入数据基本上是自动化的，但仍建议自己运行各个脚本。运行所有内容可能需要几天时间，但我们也支持仅更新部分数据。
 
-Roughly the steps are:
-- (optional) make a copy of the existing MySQL database, if you want to keep existing data.
-- Download new data.
-- Import data into MySQL.
-- Generate derived data (mostly ElasticSearch).
-- Swap out the new data in production.
+Roughly the steps are: 大致步骤如下：
+
+* (optional) make a copy of the existing MySQL database, if you want to keep existing data.
+（可选）如果要保留现有数据，请复制现有 MySQL 数据库。
+* Download new data. 下载新数据。
+* Import data into MySQL. 将数据导入 MySQL。
+* Generate derived data (mostly ElasticSearch).
+生成派生数据（主要是 ElasticSearch）。
+* Swap out the new data in production.
+换出生产中的新数据。
 
 ```bash
 [ -e ../../aa-data-import--allthethings-mysql-data ] && (echo '../../aa-data-import--allthethings-mysql-data already exists; aborting'; exit 1)
